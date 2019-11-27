@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resume</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        background-color: #8698d0;
+        color: #000000;
+        font-family: Verdana, Arial, sans-serif;}
+      h1 {
+        color: #ffffff;
+        font-size: 30px;
+        line-height: 26px;}
+      h2{
+        display: block;
+        font-size: 1.5em;
+        font-weight: bold;}
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;}
+      nav a {
+        color: #ffffff;
+        text-decoration: none;
+        line-height: 1.3;}
+      li a {
+        color: #000000;}
+      th, td {
+        padding-left: 60px;
+        padding-right: 60px;}
+      nav {
+        padding-bottom: 15px;}
+      main {
+        padding: 10px;
+        background-color: #ffffff;}
+      ul {
+        line-height: 1.3;}
+      h1, h2 {
+      	margin: 1em 0 0 0;
+      	text-align: center;
+      }
+
+      h2 {
+      	margin: 0 0 1em 0;
+      }
+      #container {
+          margin: 0 auto;
+          width: 50%;
+      }
+      #accordion input {
+      	display: none;
+      }
+      #accordion label {
+      	background: #eee;
+      	border-radius: .25em;
+      	cursor: pointer;
+      	display: block;
+      	margin-bottom: .125em;
+      	padding: .25em 1em;
+      	z-index: 20;
+      }
+      #accordion label:hover {
+      	background: #ccc;
+      }
+
+      #accordion input:checked + label {
+      	background: #ccc;
+      	border-bottom-right-radius: 0;
+      	border-bottom-left-radius: 0;
+      	color: white;
+      	margin-bottom: 0;
+      }
+      #accordion article {
+      	background: #f7f7f7;
+      	height:0px;
+      	overflow:hidden;
+      	z-index:10;
+      }
+      #accordion article p {
+      	padding: 1em;
+      }
+      #accordion input:checked article {
+      }
+      #accordion input:checked ~ article {
+      	border-bottom-left-radius: .25em;
+      	border-bottom-right-radius: .25em;
+      	height: auto;
+      	margin-bottom: .125em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+    <img src="B82B52A7-37CE-4C1F-AD9D-234A18ABF8F0.jpg" alt="Profil Picture" width="230">
+    <header>
+      <h1 align="center">Alex Minotto</h1>
+    <header/>
+
+
+    <nav align="center">
+        <a href="mailto:aminotto@asu.edu" target="_blank">Email: aminotto@asu.edu</a><br>
+        <a href="tel:602-535-6074" target="_blank">Phone: 602-535-6074</a><br>
+        <a href="https://goo.gl/maps/azVuCAf6uXLdemvg8" target="_blank">Adress: 701 E Apache Blvd<br>
+          Tempe, AZ 85281</a>
+    </nav>
+
+    <main>
+      <section id="accordion">
+			<div>
+				<input type="checkbox" id="check-1" />
+				<label for="check-1">Objective</label>
+				<article>
+        <p>Arizona State University Barrett Honors College student majoring in Digital Culture with a concentration in Graphic Information Technology
+          in the college of Herberger Institute for Design and the Arts. Creative thinker with excellent organization, communication, and technical skills.
+          Capable of multitasking and managing time well in fiercely competitive, fast-paced environment. Would love to get a job marketing multiple companies
+          social media accounts and developing Wedsites.</p>
+        </article>
+      </div>
+
+      <div>
+				<input type="checkbox" id="check-2" />
+				<label for="check-2">Education</label>
+				<article>
+        <table>
+          <tr>
+            <th>Level</th>
+            <th>Location</th>
+            <th>Graduation Year</th>
+            <th>GPA</th>
+          </tr>
+          <tr>
+            <td>High School</td>
+            <td>Scottsdale Preparatory Academy</td>
+            <td>2018</td>
+            <td>4.3</td>
+          </tr>
+          <tr>
+            <td>University</td>
+            <td>Arizona State University</td>
+            <td>2022</td>
+            <td>3.9</td>
+          </tr>
+        </table>
+        </article>
+      </div>
+
+      <div>
+				<input type="checkbox" id="check-3" />
+				<label for="check-3">Experience</label>
+				<article>
+        <ol>
+          <li><p>I was the president of Key Club during my junior and senior year of high school. We held multiple
+            fundraisers throughout the year, such as Pennies for Patients that raised over $1500 for
+            The Leukemia and Lymphoma Society.</p></li>
+          <li><p>I was a member of Rotary Club durning my senior year of high school. We hold multiple fundraisers
+            such as our yearly fundraiser, Great Hearts Day, that raised over $5000 for The Barrio Nuevo organization
+            that helps rebuild and improve isolated communities.</p></li>
+          <li><p>I was an employee at Someburros Mexican Restaurant from January 2017 to August 2019. I assisted and
+            greeted customers, brought out food in a timely manner, and supervise the cleanliness of the dining area.</p></li>
+        </ol>
+      </article>
+      </div>
+
+      <div>
+				<input type="checkbox" id="check-4" />
+				<label for="check-4">References</label>
+				<article>
+        <ul>
+          <li>Rebecca Michaels: Administrator of Key Club <a href="mailto:rmichaels@scottsdaleprep.org" target="_blank">rmichaels@scottsdaleprep.org</a></li>
+          <li>Roslyn Fletcher: Administrator of Rotary Club <a href="mailto:rfletcher@scottsdaleprep.org" target="_blank">rfletcher@scottsdaleprep.org</a></li>
+          <li>Tim Vasquez: Owner of Someburros <a href="mailto:jwalrath@someburros.com, jwalrath@someburros.com" target="_blank">jwalrath@someburros.com</a></li>
+        </ul>
+      </article>
+      </div>
+    </main>
+  </body>
+</html>
